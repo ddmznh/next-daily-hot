@@ -134,8 +134,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-          <!-- 引入域名售卖弹窗广告脚本 -->
-    <script src="https://cdn.aiyun.top/assets/aiyun/domain-ad-20251222.js"></script>
     </footer>
   );
 }
