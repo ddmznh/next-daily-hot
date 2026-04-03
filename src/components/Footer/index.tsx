@@ -70,9 +70,6 @@ export default function Footer() {
             . All rights reserved.
           </Description>
         </div>
-        
-        </div>
-      </div>
     </footer>
   );
 }
