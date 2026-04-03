@@ -57,7 +57,7 @@ export default function Footer() {
     },
     {
       icon: <House />,
-      url: pkg.author.url,
+      url: 'https://aiyunkeji.com',
       label: '博客'
     }
   ]
