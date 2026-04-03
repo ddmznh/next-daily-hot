@@ -39,7 +39,7 @@ export default function Header() {
             variant="ghost"
             size="sm"
             className="rounded-full"
-            onPress={() => window.open(`https://github.com/${pkg.author.name}/${pkg.name}`)}>
+            onPress={() => window.open(`https://aiyunkeji.com`)}>
             <GithubIcon />
           </Button>
         </div>
