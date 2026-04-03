@@ -31,19 +31,34 @@ export default function Footer() {
   // 社交图标
   const SocialLinks: Social[] = [
     {
+      icon: <ChartColumn />,
+      url: '#',
+      label: 'Umami'
+    },
+    {
       icon: <Mail />,
       url: `mailto:info@aiyunkeji.com`,
       label: '邮箱'
     },
     {
+      icon: <ApiIcon />,
+      url: '#',
+      label: 'Easy Api'
+    },
+    {
       icon: <Globe />,
-      url: 'https://aiyun.top',
+      url: '#',
       label: 'Dream Site'
     },
     {
+      icon: <IdCard />,
+      url: 'https://aiyun.top',
+      label: '作品集'
+    },
+    {
       icon: <House />,
-      url: https://aiyunkeji.com,
-      label: '官网'
+      url: 'https://aiyunkeji.com',
+      label: '博客'
     }
   ]
 
