@@ -31,34 +31,14 @@ export default function Footer() {
   // 社交图标
   const SocialLinks: Social[] = [
     {
-      icon: <ChartColumn />,
-      url: 'https://um.baiwumm.com/share/MKEsllEeHKYZJl0Q',
-      label: 'Umami'
-    },
-    {
       icon: <Mail />,
-      url: `mailto:${pkg.author.email}`,
+      url: `mailto:info@aiyunkeji.com`,
       label: '邮箱'
-    },
-    {
-      icon: <ApiIcon />,
-      url: 'https://api.baiwumm.com',
-      label: 'Easy Api'
-    },
-    {
-      icon: <Globe />,
-      url: 'https://dream.baiwumm.com',
-      label: 'Dream Site'
-    },
-    {
-      icon: <IdCard />,
-      url: 'https://portfolio.baiwumm.com',
-      label: '作品集'
     },
     {
       icon: <House />,
       url: 'https://aiyunkeji.com',
-      label: '博客'
+      label: '官网'
     }
   ]
 
