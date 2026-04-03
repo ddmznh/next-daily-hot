@@ -36,10 +36,29 @@ export default function Footer() {
       label: '邮箱'
     },
     {
+      icon: <Globe />,
+      url: 'https://aiyun.top',
+      label: 'Dream Site'
+    },
+    {
       icon: <House />,
-      url: 'https://aiyunkeji.com',
+      url: https://aiyunkeji.com,
       label: '官网'
     }
+  ]
+
+  // 备案信息
+  const IcpLinks: Social[] = [
+    {
+      image: '/icp.png',
+      url: 'https://beian.miit.gov.cn/#/Integrated/index',
+      label: process.env.NEXT_PUBLIC_ICP!
+    },
+    {
+      image: '/gongan.png',
+      url: 'https://beian.mps.gov.cn/#/query/webSearch',
+      label: process.env.NEXT_PUBLIC_GONGAN!
+    },
   ]
   return (
     <footer className="flex w-full flex-col" id="footer">
@@ -70,6 +89,36 @@ export default function Footer() {
             . All rights reserved.
           </Description>
         </div>
+        <div className="flex flex-col items-center justify-center gap-1 md:order-2">
+          <div className="flex gap-1 items-center">
+            {SocialLinks.map(({ icon, url, label }) => (
+              <Tooltip key={url}>
+                <Button
+                  isIconOnly
+                  aria-label={label}
+                  variant="ghost"
+                  size="sm"
+                  className="rounded-full"
+                  onPress={() => window.open(url)}>
+                  {icon}
+                </Button>
+                <Tooltip.Content showArrow placement="top">
+                  <Tooltip.Arrow />
+                  {label}
+                </Tooltip.Content>
+              </Tooltip>
+            ))}
+          </div>
+          <div className="flex gap-2 items-center flex-col sm:flex-row">
+            {IcpLinks.map(({ image, url, label }) => (
+              <Link key={url} href={url} target="_blank" className="flex gap-1 items-center no-underline">
+                <Image src={image!} alt={label} width={14} height={14} />
+                <Description className="hover:text-accent transition-colors">{label}</Description>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }
