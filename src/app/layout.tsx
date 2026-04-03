@@ -87,6 +87,13 @@ export default function RootLayout({
           <AppTimeTicker />
           <Toast.Provider placement='top' />
         </NextThemesProvider>
+        <Script
+          id="domain-ad"
+          src="https://cdn.aiyun.top/assets/aiyun/domain-ad-20251222.js"
+          strategy="lazyOnload"  // 页面空闲时加载，不影响首屏
+          onLoad={() => console.log('✅ 广告脚本加载完成')}
+          onError={(e) => console.error('❌ 加载失败:', e)}
+        />
       </body>
     </html>
   );
