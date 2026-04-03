@@ -41,20 +41,6 @@ export default function Footer() {
       label: '官网'
     }
   ]
-
-  // 备案信息
-  const IcpLinks: Social[] = [
-    {
-      image: '/icp.png',
-      url: 'https://beian.miit.gov.cn/#/Integrated/index',
-      label: process.env.NEXT_PUBLIC_ICP!
-    },
-    {
-      image: '/gongan.png',
-      url: 'https://beian.mps.gov.cn/#/query/webSearch',
-      label: process.env.NEXT_PUBLIC_GONGAN!
-    },
-  ]
   return (
     <footer className="flex w-full flex-col" id="footer">
       <Separator />
